@@ -15,24 +15,10 @@ import java.util.UUID;
 @RestController
 public class AuthApiController {
     @Resource UserAuthService userAuthService;
-    @RequestMapping("/dologin")
-    public RestBean login(@RequestParam("account") String account,@RequestParam("password") String password){
-        return new RestBean(200,"success",userAuthService.verifyAccount(account,password));
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//    @RequestMapping("/login")
+//    public RestBean login(@RequestParam("account") String account,@RequestParam("password") String password){
+//        return new RestBean(200,"success",userAuthService.verifyAccount(account,password));
+//    }
 
 
 
